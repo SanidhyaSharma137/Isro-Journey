@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Mission Timeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div class="loader" id="loader">
+    <div class="rocket-loader">🚀</div>
+    <p>Launching ISRO Journey...</p>
+    <div class="loader-bar">
+        <div class="loader-progress"></div>
+    </div>
+</div>
+
+<!-- Glowing Moon -->
+<div class="moon"></div>
+    
+<!-- Meteors - Different Directions -->
+<div class="meteor meteor-1"></div>
+<div class="meteor meteor-2"></div>
+<div class="meteor meteor-3"></div>
+<div class="meteor meteor-4"></div>
+<div class="meteor meteor-5"></div>
+
+<!-- Comets -->
+<div class="comet comet-1"></div>
+<div class="comet comet-2"></div>
+
+<!-- Floating Asteroids -->
+<div class="asteroid asteroid-1">🪨</div>
+<div class="asteroid asteroid-2">☄️</div>
+<div class="asteroid asteroid-3">🪨</div>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <div class="custom-badge">
+            <div class="orbit-ring"></div>
+            <div class="planet">🇮🇳</div>
+        </div>
+        <div class="header-text">
+            <h1>🚀 ISRO Journey</h1>
+            <p>India's Space Exploration Timeline</p>
+            <span class="tagline">Tribute to Indian Space Program</span>
+        </div>
+    </div>
+</header>
+
+<!-- Theme Toggle Button -->
+<div class="theme-toggle" id="themeToggle">
+    <span class="toggle-icon">🌙</span>
+</div>
+
+<!-- Statistics Section -->
+<div class="stats-section">
+    <div class="stat-card">
+        <div class="stat-number">7</div>
+        <div class="stat-label">Major Missions</div>
+    </div>
+    
+    <div class="stat-card">
+        <div class="stat-number">48+</div>
+        <div class="stat-label">Years of Excellence</div>
+    </div>
+    
+    <div class="stat-card">
+        <div class="stat-number">85%</div>
+        <div class="stat-label">Success Rate</div>
+    </div>
+    
+    <div class="stat-card">
+        <div class="stat-number">400+</div>
+        <div class="stat-label">Satellites Launched</div>
+    </div>
+</div>
+
+<!-- Horizontal Timeline -->
+<div class="horizontal-timeline">
+    <h2>📅 ISRO Journey Through Time</h2>
+    
+    <div class="timeline-scroll">
+        <div class="timeline-track">
+            
+            <div class="timeline-point">
+                <div class="point-year">1975</div>
+                <div class="point-dot"></div>
+                <div class="point-label">🛰️ Aryabhata</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">1980</div>
+                <div class="point-dot"></div>
+                <div class="point-label">🚀 SLV-3</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">1982</div>
+                <div class="point-dot"></div>
+                <div class="point-label">📡 INSAT-1A</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">2008</div>
+                <div class="point-dot"></div>
+                <div class="point-label">🌙 Chandrayaan-1</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">2013</div>
+                <div class="point-dot"></div>
+                <div class="point-label">🔴 Mangalyaan</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">2019</div>
+                <div class="point-dot"></div>
+                <div class="point-label">🌙 Chandrayaan-2</div>
+            </div>
+            
+            <div class="timeline-point">
+                <div class="point-year">2023</div>
+                <div class="point-dot success"></div>
+                <div class="point-label">🌙 Chandrayaan-3</div>
+            </div>
+            
+            <div class="timeline-point future">
+                <div class="point-year">2025</div>
+                <div class="point-dot upcoming"></div>
+                <div class="point-label">👨‍🚀 Gaganyaan</div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <p class="scroll-hint">👆 Scroll to explore →</p>
+</div>
+
+<!-- Search & Filter Section -->
+<div class="search-section">
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search missions... (e.g., Chandrayaan, Mars)">
+    </div>
+    
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Missions</button>
+        <button class="filter-btn" data-filter="satellite">🛰️ Satellites</button>
+        <button class="filter-btn" data-filter="moon">🌙 Lunar</button>
+        <button class="filter-btn" data-filter="mars">🔴 Mars</button>
+        <button class="filter-btn" data-filter="rocket">🚀 Rockets</button>
+    </div>
+</div>
+
+<!-- Timeline Container -->
+<div class="timeline">
+
+    <!-- Mission 1: Aryabhata -->
+    <div class="mission-card">
+        <div class="mission-year">1975</div>
+        <div class="mission-content">
+          <div class="mission-image">
+    <img src="images/aryabhata.jpg" alt="Aryabhata">
+</div>
+            <h3>🛰️ Aryabhata</h3>
+            <p class="mission-type">First Indian Satellite</p>
+            <p class="mission-desc">India's first satellite, named after ancient mathematician. Launched by Soviet Union.</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 19 April 1975</li>
+                    <li><strong>Launch Site:</strong> Kapustin Yar, Russia</li>
+                    <li><strong>Weight:</strong> 360 kg</li>
+                    <li><strong>Objective:</strong> X-ray astronomy, aeronomics, solar physics</li>
+                    <li><strong>Status:</strong> Deactivated after 5 days</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 2: SLV-3 -->
+    <div class="mission-card">
+        <div class="mission-year">1980</div>
+        <div class="mission-content">
+            <div class="mission-image">
+    <img src="images/slv3.jpg" alt="SLV-3">
+</div>
+            <h3>🚀 SLV-3</h3>
+            <p class="mission-type">First Indian Launch Vehicle</p>
+            <p class="mission-desc">India's first satellite launch vehicle. Successfully placed Rohini satellite in orbit.</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 18 July 1980</li>
+                    <li><strong>Launch Site:</strong> Sriharikota, India</li>
+                    <li><strong>Significance:</strong> India became 6th nation with orbital launch capability</li>
+                    <li><strong>Payload:</strong> Rohini RS-1 satellite</li>
+                    <li><strong>Status:</strong> Successful</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 3: INSAT-1A -->
+    <div class="mission-card">
+        <div class="mission-year">1982</div>
+        <div class="mission-content">
+            <div class="mission-image">
+    <img src="images/insat.jpg" alt="INSAT-1A">
+</div>
+            <h3>📡 INSAT-1A</h3>
+            <p class="mission-type">First Communication Satellite</p>
+            <p class="mission-desc">India's first multipurpose communication and meteorology satellite.</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 10 April 1982</li>
+                    <li><strong>Purpose:</strong> Telecommunications, TV broadcast, meteorology</li>
+                    <li><strong>Weight:</strong> 1152 kg</li>
+                    <li><strong>Status:</strong> Failed after 6 months due to power issues</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 4: Chandrayaan-1 -->
+    <div class="mission-card">
+        <div class="mission-year">2008</div>
+        <div class="mission-content">
+           <div class="mission-image">
+    <img src="images/chandrayaan1.jpg" alt="INSAT-1A">
+</div>
+            <h3>🌙 Chandrayaan-1</h3>
+            <p class="mission-type">First Lunar Mission</p>
+            <p class="mission-desc">India's first mission to Moon. Discovered water molecules on lunar surface!</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 22 October 2008</li>
+                    <li><strong>Launch Vehicle:</strong> PSLV-C11</li>
+                    <li><strong>Major Discovery:</strong> Water molecules on Moon</li>
+                    <li><strong>Orbits:</strong> 3400+ around Moon</li>
+                    <li><strong>Status:</strong> Mission completed successfully</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 5: Mangalyaan (MOM) -->
+    <div class="mission-card">
+        <div class="mission-year">2013</div>
+        <div class="mission-content">
+           <div class="mission-image">
+    <img src="images/mangalyaan.jpg" alt="Mangalyaan">
+</div>
+            <h3>🔴 Mangalyaan (Mars Orbiter Mission)</h3>
+            <p class="mission-type">First Interplanetary Mission</p>
+            <p class="mission-desc">India became first Asian nation and first in world to reach Mars in maiden attempt!</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 5 November 2013</li>
+                    <li><strong>Mars Orbit:</strong> 24 September 2014</li>
+                    <li><strong>Cost:</strong> ₹450 crore (cheaper than Hollywood movie Gravity!)</li>
+                    <li><strong>Achievement:</strong> First country to succeed in first attempt</li>
+                    <li><strong>Status:</strong> Successfully operated till 2022</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 6: Chandrayaan-2 -->
+    <div class="mission-card">
+        <div class="mission-year">2019</div>
+        <div class="mission-content">
+            <div class="mission-image">
+    <img src="images/chandrayaan2.jpg" alt="Chandrayaan-2">
+</div>
+            <h3>🌙 Chandrayaan-2</h3>
+            <p class="mission-type">Moon Landing Attempt</p>
+            <p class="mission-desc">Attempted soft landing on Moon's south pole. Orbiter still functioning perfectly.</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 22 July 2019</li>
+                    <li><strong>Components:</strong> Orbiter, Lander (Vikram), Rover (Pragyan)</li>
+                    <li><strong>Landing Attempt:</strong> 7 September 2019</li>
+                    <li><strong>Status:</strong> Lander lost contact, but Orbiter still working</li>
+                    <li><strong>Achievement:</strong> Valuable data from lunar orbit</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission 7: Chandrayaan-3 -->
+    <div class="mission-card">
+        <div class="mission-year">2023</div>
+        <div class="mission-content">
+           <div class="mission-image">
+    <img src="images/chandrayaan3.jpg" alt="Chandrayaan-3">
+</div>
+            <h3>🌙 Chandrayaan-3</h3>
+            <p class="mission-type">Successful Moon Landing</p>
+            <p class="mission-desc">Historic! India became 4th country to land on Moon and 1st on south pole!</p>
+            <button class="details-btn">Learn More</button>
+            
+            <div class="mission-details" style="display: none;">
+                <h4>Mission Details:</h4>
+                <ul>
+                    <li><strong>Launch Date:</strong> 14 July 2023</li>
+                    <li><strong>Landing Date:</strong> 23 August 2023</li>
+                    <li><strong>Landing Site:</strong> Moon's South Pole</li>
+                    <li><strong>Achievement:</strong> Soft landing + Rover operations successful</li>
+                    <li><strong>Status:</strong> Mission accomplished! 🎉</li>
+                </ul>
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- No Results Message -->
+    <div class="no-results" id="noResults">
+        <p>🔍 Koi mission nahi mila!</p>
+        <span>Try different search term</span>
+    </div>
+
+</div> <!-- Timeline end -->
+
+<!-- Upcoming Missions Section -->
+<div class="upcoming-section">
+    <h2>🔮 Upcoming ISRO Missions</h2>
+    <p class="subtitle">India's Future in Space</p>
+    
+    <div class="upcoming-container">
+        
+        <div class="upcoming-card">
+            <div class="upcoming-year">2025</div>
+            <div class="mission-icon">👨‍🚀</div>
+            <h3>Gaganyaan</h3>
+            <p class="mission-type">First Crewed Mission</p>
+            <p>India's first human spaceflight program. 3 astronauts will orbit Earth for 3 days.</p>
+            <div class="status-badge developing">🔧 In Development</div>
+        </div>
+        
+        <div class="upcoming-card">
+            <div class="upcoming-year">Operational</div>
+            <div class="mission-icon">☀️</div>
+            <h3>Aditya-L1</h3>
+            <p class="mission-type">Solar Observatory</p>
+            <p>Study Sun's corona and solar winds. Currently at Lagrange Point L1.</p>
+            <div class="status-badge active">✅ Active</div>
+        </div>
+        
+        <div class="upcoming-card">
+            <div class="upcoming-year">2028</div>
+            <div class="mission-icon">🪐</div>
+            <h3>Shukrayaan-1</h3>
+            <p class="mission-type">Venus Orbiter</p>
+            <p>India's mission to Venus. Study atmosphere and surface mapping.</p>
+            <div class="status-badge planned">📋 Planned</div>
+        </div>
+        
+        <div class="upcoming-card">
+            <div class="upcoming-year">2026</div>
+            <div class="mission-icon">🌙</div>
+            <h3>Chandrayaan-4</h3>
+            <p class="mission-type">Lunar Sample Return</p>
+            <p>Bring Moon rocks back to Earth. Joint mission with JAXA.</p>
+            <div class="status-badge planned">📋 Planned</div>
+        </div>
+        
+    </div>
+</div>
+<!-- Keyboard Shortcuts Hint -->
+<div class="shortcuts-hint">
+    <p>⌨️ Shortcuts: <span>D</span> Theme | <span>S</span> Search | <span>T</span> Top | <span>Esc</span> Close</p>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h3>🚀 ISRO Journey</h3>
+            <p>Tracking India's Space Legacy</p>
+        </div>
+        
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="https://www.isro.gov.in/" target="_blank">Official ISRO Website</a>
+            <a href="https://www.linkedin.com/in/sanidhya-sharma-2a30b8380" target="_blank">Connect on LinkedIn</a>
+            <a href="https://github.com/sanidhyasharma137" target="_blank">GitHub Profile</a>
+        </div>
+        
+        <div class="footer-credits">
+            <h4>Created By</h4>
+            <p>Sanidhya Sharma</p>
+            <p>Aspiring ISRO Scientist 🛰️</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 ISRO Journey | Made with 🧡 for India's Space Program</p>
+        <p>Jai Hind! 🇮🇳</p>
+    </div>
+</footer>
+<!-- Share Button -->
+<div class="share-container">
+    <button class="share-btn" id="shareBtn">📤</button>
+    
+    <div class="share-menu" id="shareMenu">
+        <button class="share-option" id="copyLink">📋 Copy Link</button>
+        <a class="share-option" id="whatsappShare" href="#" target="_blank">💬 WhatsApp</a>
+        <a class="share-option" id="twitterShare" href="#" target="_blank">🐦 Twitter</a>
+        <a class="share-option" id="linkedinShare" href="#" target="_blank">💼 LinkedIn</a>
+    </div>
+</div><!-- Stats Chart Section -->
+<div class="chart-section">
+    <h2>📊 Mission Success Visualization</h2>
+    
+    <div class="chart-container">
+        <div class="chart-bar">
+            <div class="bar-fill satellite" style="--percentage: 100%;"></div>
+            <span class="bar-label">Satellites</span>
+            <span class="bar-value">400+</span>
+        </div>
+        
+        <div class="chart-bar">
+            <div class="bar-fill lunar" style="--percentage: 75%;"></div>
+            <span class="bar-label">Lunar Missions</span>
+            <span class="bar-value">3</span>
+        </div>
+        
+        <div class="chart-bar">
+            <div class="bar-fill mars" style="--percentage: 100%;"></div>
+            <span class="bar-label">Mars Mission</span>
+            <span class="bar-value">100%</span>
+        </div>
+        
+        <div class="chart-bar">
+            <div class="bar-fill success" style="--percentage: 85%;"></div>
+            <span class="bar-label">Success Rate</span>
+            <span class="bar-value">85%</span>
+        </div>
+        
+        <div class="chart-bar">
+            <div class="bar-fill years" style="--percentage: 96%;"></div>
+            <span class="bar-label">Years Active</span>
+            <span class="bar-value">48+</span>
+        </div>
+    </div>
+</div>
+<!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTop">🚀</button>
+
+<script src="script.js"></script>
+</body>
+</html>
