@@ -227,7 +227,7 @@ const shareMenu = document.getElementById('shareMenu');
 const copyLinkBtn = document.getElementById('copyLink');
 
 // Website URL (GitHub Pages wala)
-const websiteURL = 'https://sanidhyasharma137.github.io/isro-journey';
+const websiteURL = 'https://sanidhyasharma137.github.io/isro-journey/';
 const websiteTitle = 'ISRO Journey - India\'s Space Exploration Timeline';
 
 // Toggle share menu
